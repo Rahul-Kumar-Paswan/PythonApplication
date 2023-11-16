@@ -34,7 +34,7 @@ jobs:
 
     - name: Build, tag, and push image to Amazon ECR
       run: |
-          aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 571888835380.dkr.ecr.us-east-1.amazonaws.com
-          docker build -t python-repo .
-          docker tag python-repo:latest 571888835380.dkr.ecr.us-east-1.amazonaws.com/python-repo:latest
-          docker push 571888835380.dkr.ecr.us-east-1.amazonaws.com/python-repo:latest
+          aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/i4l4g3c7
+          docker build -t rahul/repo .
+          docker tag rahul/repo:latest public.ecr.aws/i4l4g3c7/rahul/repo:latest
+          docker push public.ecr.aws/i4l4g3c7/rahul/repo:latest
