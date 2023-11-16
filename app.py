@@ -5,9 +5,9 @@ app = Flask(__name__)
 
 # Replace these values with your MySQL details
 db_config = {
-    'host': 'rds-db.cptyiwp2zznq.us-east-1.rds.amazonaws.com',
+    'host': 'rds-db.crjfogroymig.us-east-1.rds.amazonaws.com',
     'user': 'foo',
-    'password': 'x}O!bAkLODeYhG7Y8:U|e]UY+y){',
+    'password': 'b$*E?6HIN<8t#)PDDfc35v:%|K{k',
     'database': 'mydb'
 }
 
